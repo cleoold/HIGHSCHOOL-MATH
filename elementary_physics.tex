@@ -62,7 +62,7 @@
 \begin{center}
      \Large{\textbf{A formula summary for physics}} \\
 \end{center}
-\begin{multicols}{3}
+\begin{multicols*}{3}
 \setlength{\premulticols}{1pt}
 \setlength{\postmulticols}{1pt}
 \setlength{\multicolsep}{1pt}
@@ -111,6 +111,8 @@ Hooke's law: $\mathbf{F}=-k\mathbf{x}$
 \newline
 \spc work by spring: $W=\frac{1}{2}kx_i^2-\frac{1}{2}kx_f^2$
 \newline
+kinetic energy: $K=\frac{1}{2}mv^2$
+\newline
 work-kinetic energy theorem: $W=K_f-K_i=\frac{1}{2}mv_f^2-\frac{1}{2}mv_i^2$
 \newline
 power: $P=\frac{dW}{dt}=\mathbf{F}\cdot \mathbf{v}$
@@ -154,6 +156,8 @@ centre of mass: $\mathbf{r}_{\mathrm{CM}}=\frac{1}{M} \sum _i m_i \mathbf{r}_i$
 \spc relation: $dm=\rho dV$
 \newline \newline
 linear momentum: $\mathbf{p}=m\mathbf{v}$
+\newline
+\spc relation: $K=\frac{p^2}{2m}$
 \newline
 net force: $\mathbf{F}_\mathrm{T}=\frac{d\mathbf{p}}{dt}$
 \newline
@@ -419,7 +423,7 @@ transverse displacement: $y(x,t)=y_m\mathrm{sin}(kx-\omega t)$
 \newline
 \spc transverse speed: $u=\frac{\partial y}{\partial t}$
 \newline
-\spc average power: $\bar{P}=\frac{1}{2}\mu v\omega ^2y_m^2$
+\spc average power: $\overline{P}=\frac{1}{2}\mu v\omega ^2y_m^2$
 \newline \newline \newline \newline
 adding waves
 \newline
@@ -517,7 +521,7 @@ volume work of expansion at constant pressure: $W=\int \frac{nRT}{V}dV=nRT \, \m
 \newline
 gas pressure: $p=\frac{nMv_{\textrm{rms}}^2}{3V}$
 \newline
-translational kinetic energy: $\bar{K}=\frac{3}{2}kT$
+translational kinetic energy: $\overline{K}=\frac{3}{2}kT$
 \newline 
 Boltzman constant $k=R/N_A$
 \newline
@@ -527,11 +531,11 @@ Maxwell's speed distribution: $P(v)=4\pi (\frac{M}{2 \pi RT})^{3/2}v^2e^{-Mv^2/2
 \newline
 \spc most propable speed: $v_p=\sqrt{\frac{2RT}{M}}$
 \newline
-\spc average speed: $\bar{v}=\sqrt{\frac{8RT}{\pi M}}$
+\spc average speed: $\overline{v}=\sqrt{\frac{8RT}{\pi M}}$
 \newline
 \spc rms speed: $v_{\mathrm{rms}}=\sqrt{\frac{3RT}{M}}$
 \newline
-internal energy of monoatomic gas: $E_{\mathrm{int}}=(nN_A)\bar{K}=\frac{3}{2}nRT$
+internal energy of monoatomic gas: $E_{\mathrm{int}}=(nN_A)\overline{K}=\frac{3}{2}nRT$
 \newline
 \spc monoatom: 3/2 ($f=1$)
 \newline 
@@ -854,7 +858,7 @@ Electromagnetic waves
 \newline \newline
 plane wave's instantaneous flow rate: $S=\frac{1}{c\mu _0}E^2$ ($S=P/A$)
 \newline
-wave intensity: $I=\bar{S}=\frac{1}{c\mu _0}E_{\textrm{rms}}^2$
+wave intensity: $I=\overline{S}=\frac{1}{c\mu _0}E_{\textrm{rms}}^2$
 \newline
 momentum of light: 
 \newline
@@ -889,7 +893,7 @@ series RLC circuit
 \newline
 \spc phase constant: $\tan \phi=\frac{V_L-V_C}{V_R}=\frac{X_L-X_C}{R}$
 \newline
-\spc average power: $\bar{P}=I_{\textrm{rms}}^2R=\varepsilon _{\textrm{rms}}I_{\textrm{rms}}\cos \phi$
+\spc average power: $\overline{P}=I_{\textrm{rms}}^2R=\varepsilon _{\textrm{rms}}I_{\textrm{rms}}\cos \phi$
 \newline
 \spc $I$ is in phase with $v_R$; leads $v_C$ by 90°, lags hehind $v_L$ by 90°
 \newline \newline
@@ -1020,7 +1024,7 @@ double-slit interference
 \newline
 \spc illumination intensity: $I=4I_0\cos ^2(\frac{1}{2}\phi)$, $\phi=\frac{2 \pi d}{\lambda} \sin \theta $ 
 \newline
-\spc\spc ($I_0$: intensity of one slit when the ohter covered, d: seperation of slits), $\bar{I}=2I_0$
+\spc\spc ($I_0$: intensity of one slit when the ohter covered, d: seperation of slits), $\overline{I}=2I_0$
 \newline \newline
 real double-slit
 \newline
@@ -1036,7 +1040,7 @@ multiple slits ($N$ slits)
 \newline
 \spc dispersion/seperation of lines: $D=\frac{\Delta \theta }{\Delta \lambda }=\frac{m}{d\cos \theta }$
 \newline
-\spc resolving power: $R=Nm=\frac{\bar{\lambda} }{\Delta \lambda }$
+\spc resolving power: $R=Nm=\frac{\overline{\lambda} }{\Delta \lambda }$
 \newline \newline
 thin film, $n_1,n_3>n_2$ (incident at $n_1$)
 \newline
@@ -1114,8 +1118,50 @@ relativistic kinetic energy: $K=mc^2(\gamma -1)$
 \section{Quantum}
 
 \subsection{Photons, particles}
+single slit experiment: 
+\newline
+\spc distance between central and first max: $y=\frac{\lambda L}{d}$
+\newline
+\spc width of central max: $w=2y=\frac{2\lambda L}{d}$
+\newline
+De Braglie relation: $h=\lambda p=\lambda \sqrt{2mK}$
+\newline
+Planck's constant: $h=6.626\cdot 10^{-34}\,\mathrm{m}^2\cdot\textrm{kg}/\textrm{s}$
+\newline
+energy of photon: $E=cp=c\frac{h}{\lambda}=hf$
+\newline
+photoelectric effect: $K_{\mathrm{max}}=hf-\phi$
+\newline
+Compton scattering:
+\newline
+\spc electron stationary: $\lambda '-\lambda=\frac{h}{mc}(1-\cos\phi)$
+\newline
+\spc electron head-on: $\lambda '\approx \frac{hc}{E^e}\left [ 1+\frac{m_e^2c^4\lambda}{4hcE^e} \right ]$
+\newpage
+blackbody radiation (low frequency)
+\newline
+\spc distribution finding entities with energy $E$:
+\newline
+\spc \spc$p_E(E)=\frac{1}{KT}e^{-E/kT}$
+\newline
+\spc \spc average energy: $\overline{E}=kT$
+\newline
+\spc distribution of number of standing waves per unit volume:
+\newline
+\spc \spc $p_N(f)=\frac{N(f)}{V}=\frac{8\pi}{c^2}f^2kT$
+\newline
+\spc distribution of energy per unit volume
+\newline
+\spc \spc $p_{\nicefrac{E}{V}}(f)=\frac{E(f)}{V}=\frac{8\pi}{c^3}f^2kT$
+\newline
+\spc number of photons in standing wave: $n\approx \frac{kT}{hf}$
+\newline
+ultraviolet catastrophe (high frequency)
+\newline
+\spc energy of photons: $E=nhf$
 
 
 
-\end{multicols}
+
+\end{multicols*}
 \end{document}
