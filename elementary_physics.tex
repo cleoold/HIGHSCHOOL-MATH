@@ -1,7 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% summarised by cos. later information will be added soon. % 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[10pt,landscape]{article}
 \usepackage{amssymb,amsmath,amsthm,amsfonts}
 \usepackage{multicol,multirow}
@@ -18,6 +14,8 @@
 \usepackage{pagecolor,lipsum}
 \usepackage{esint}
 \usepackage{nicefrac}
+\usepackage{graphicx}
+\graphicspath{ {.} }
 
 \pagecolor{yellow!30!}
 
@@ -1148,7 +1146,7 @@ blackbody radiation (low frequency)
 \newline
 \spc distribution of number of standing waves per unit volume:
 \newline
-\spc \spc $p_N(f)=\frac{N(f)}{V}=\frac{8\pi}{c^2}f^2kT$
+\spc \spc $p_N(f)=\frac{N(f)}{V}=\frac{8\pi}{c^2}f^2$
 \newline
 \spc distribution of energy per unit volume
 \newline
@@ -1159,9 +1157,127 @@ blackbody radiation (low frequency)
 ultraviolet catastrophe (high frequency)
 \newline
 \spc energy of photons: $E=nhf$
+\newline
+\spc average energy: $\overline{E}(f)=hfe^{-hf/kT}$
+\newline
+\spc distribution of number of standing waves per unit volume:
+\newline
+\spc \spc $p_N(f)=\frac{8\pi}{c^2}f^2\cdot hfe^{-hf/kT}$
+\newline
+\spc \spc $p_N(\lambda)=\frac{8\pi hc}{\lambda^5}\cdot hfe^{-hf/kT}$
+\newline \newline
+confining standing waves
+\newline
+\spc probability distribution of finding particle: $p(x)=|\Psi(n)|^2$
+\newline
+\spc wavelength, ground state: $\lambda_0=2L$
+\newline
+\spc momentum, ground state: $p_0=\frac{h}{2L}$
+\newline
+\spc energy, ground state: $E_0=\frac{h^2}{8L^2m}$
+\newline
+\spc wavelength, excited state: $\lambda_n=\frac{\lambda_0}{n}$, $n=1,2,...$
+\newline
+\spc momentum, excited state: $p_n=np_0$, $n=1,2,...$
+\newline
+\spc energy, excited state: $E_n=n^2E_0$, $n=1,2,...$
+\newline \newline
+Heisenberg uncertainty principle: $\Delta x\Delta p\geq \frac{h}{4\pi}= \frac{\hbar}{2}$
+\newline
+\spc corollary: $\Delta E\Delta t\propto \hbar$
+\newline
+particle diffraction, max angle: $\Delta \theta_{\textrm{max}}=\frac{\lambda_0}{L}$
+\subsection{Waves 1}
+orbit of hydrogen atoms
+\newline
+\spc constructive interference: $2\pi r=n\lambda,n=1,2,...$
+\newline
+\spc Bohr radius: $r_n=a_0n^2$, $a_0=\frac{4\pi\epsilon_0\hbar^2}{me^2}=0.529\,\textrm{\AA }$
+\newline
+\spc original quantization condition: $p_n=\frac{\hbar}{a_0}\frac{1}{n}$,  $L_n=\hbar n$
+\newline
+\spc total energy: $E_n=-K_n=-\frac{\hbar^2}{2ma_0}\frac{1}{n^2}=-\frac{E_1}{n^2}$
+\newline
+\spc ground state energy: $E_1=13.6\,\textrm{eV}$
+\newline \newline
+free particle, 2D complex wave: $\Psi(x,t)=Ae^{\frac{1}{\hbar}(px-Et)}$
+\newline
+\newline
+general Schrödinger equation:
+\newline
+\spc $i\hbar \frac{\partial}{\partial t}\Psi(x,y,z,t)=-\frac{\hbar^2}{2m}\nabla^2\Psi(x,y,z,t)+U(x,y,z)\Psi(x,y,z,t)$
+\newline
+time-independent Schrödinger equation:
+\newline
+\spc $E\Psi(x,y,z)=-\frac{\hbar^2}{2m}\nabla^2\Psi(x,y,z)+U(x,y,z)\Psi(x,y,z)$
+\newline
+probability flux: $\mathbf{J}=\frac{p}{m}\nabla s$
+\newline
+normalisation: $\int |\Psi(x,y,z,t)|^2dv=1$
+\newline %\newline
+particle bounded by nodes $0$, $L$
+\newline
+\spc potential function: $V(x)=\left\{\begin{matrix}
+0,&0\leq x\leq L\\ \infty,&x<0\vee x>L 
+\end{matrix}\right.$
+\newline
+\spc momentum: $p_n=\frac{h}{2L}n,n=1,2,...$
+\newline
+\spc energy: $E_n=\frac{h^2}{8mL^2}n^2,n=1,2,...$
+\newline
+\spc wave function, time-independent:
+\newline
+\spc \spc $\psi_n(x)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L}),n=1,2,...$
+\newline
+\spc wave function, time-dependent:
+\newline
+\spc \spc $\Psi_n(x,t)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})\cdot e^{-\frac{i}{\hbar}E_nt},n=1,2,...$
+\newline 
+\spc wave function, time-independent, 3D:
+\newline
+\spc \spc $\psi_n(x,y,z)=\sqrt{\frac{2}{L}}\sin(\frac{n_x\pi x}{L})\cdot \sqrt{\frac{2}{L}}\sin(\frac{n_y\pi y}{L})\cdot \sqrt{\frac{2}{L}}\sin(\frac{n_z\pi z}{L}),n_i=1,2,...$
+\newline
+\spc \spc energy assuming constant time: $E=\frac{\hbar}{2m}\frac{\pi^2}{L^2}(n_x^2+n_y^2+n_z^2)$
+\newline \newline
+finite potential well
+\newline
+\spc momentum in regions:
+\newline
+\spc \spc $p_x=\left\{\begin{matrix}
+\pm \sqrt{2mE},&0\leq x\leq L\\ \pm \sqrt{2m(E-U_0)},&x<0\vee x>L 
+\end{matrix}\right.$
+\newline
+\spc momentum amplitude: $|p_x|=\hbar k=\sqrt{2m(U_0-E)}$
+\newline
+\spc tunneling probability: $P_T\approx \alpha e^{-2kL}$,  $\alpha=16\frac{E}{U_0}(1-\frac{E}{U_0})$
+\newline \newline
+harmonic oscillator
+\newline
+\spc zero-point energy: $E_0=\frac{1}{2}hf$
+\newline
+\spc energy at $n$th level: \spc\spc$E_n=(n+\frac{1}{2})hf=\underbrace{nhf}_{\textrm{number of photons}}+\underbrace{\nicefrac{1}{2}hf}_{\textrm{zero-point energy}}$
+\newline
+\spc energy in vacuum: $E_{\textrm{vac}}=-\frac{hc}{48}L$
+\newline \newline
+quantum numbers
+\newline
+\spc total energy: $E_n=-(\frac{1}{4\pi\epsilon_0})^2\frac{me^4}{2\hbar}\frac{1}{n^2}=-\frac{13.6\,\textrm{eV}}{n^2},n=1,2,...$
+\newline
+\spc magnitude of $\mathbf{L}$: $L=\sqrt{\ell(\ell+1)}\hbar,\ell=1,2,...,n-1$
+\newline
+\spc z-projection of $\mathbf{L}$: $L_z=m_{\ell}\hbar,m_{\ell}=0,\pm 1,\pm 2, ..., \pm \ell$
 
+\vfill \null
+\columnbreak
 
-
-
+\begin{center}
+     {\textbf{End of formula sheet}} \\
+\end{center}
+This summary was made possible by \textit{cos}. It was coded to help learners recall their knowledge and understanding of general physics. As physics equations do not change according to textbooks thus remaining universal, please reply to the thread where this was published in case of any errors.
+\includegraphics[scale=0.05]{blueicon.eps}
 \end{multicols*}
 \end{document}
+
+% Page format source: Dave Richeson (divisbyzero.com), Dickinson College% 
+
+% summarised by cos
