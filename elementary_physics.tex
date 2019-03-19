@@ -16,6 +16,8 @@
 \usepackage{nicefrac}
 \usepackage{graphicx}
 \graphicspath{ {.} }
+\usepackage[scr=boondoxo]{mathalfa}
+%scr = mathpi%
 
 \pagecolor{yellow!30!}
 
@@ -41,7 +43,8 @@
                                 {\normalfont\small\bfseries}}
                                 
 \newcommand{\spc}{\hspace*{1em}}
-\renewcommand{\thefootnote}{(\arabic{footnote})}                                
+\renewcommand{\thefootnote}{(\arabic{footnote})}
+
 \makeatother
 \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
@@ -56,7 +59,6 @@
 % \everymath{\displaystyle}
 \raggedright
 \footnotesize
-
 \begin{center}
      \Large{\textbf{A formula summary for physics}} \\
 \end{center}
@@ -67,7 +69,6 @@
 \setlength{\columnsep}{2pt}
 
 \section{Classical mechanics}
-
 \subsection{Kinetics}
 velocity: $\mathbf{v}=\frac{d\mathbf{r}}{dt}=r'_x \mathbf{i}+r'_y \mathbf{j}+r'_z \mathbf{k}$
 \newline
@@ -667,15 +668,15 @@ rate of electricity supply: $P=iV$
 \newline
 \spc resistive dissipation: $P=i^2R=\frac{V^2}{R}$
 \newline
-electromotive force: $\varepsilon =\frac{dW}{dq}$
+electromotive force: $\mathscr{E} =\frac{dW}{dq}$
 \newline
-\spc supplying current: $i=\frac{\varepsilon }{R}$
+\spc supplying current: $i=\frac{\mathscr{E} }{R}$
 \newline \newline
 Kirchhoff's circuit laws
 \newline
 \spc resistance rule: $\Delta V=-iR$ (current), $\Delta V=+iR$ (opposite)
 \newline
-\spc emf rule: $\Delta V=+\varepsilon $ (current), $\Delta V=-\varepsilon $ (opposite)
+\spc emf rule: $\Delta V=+\mathscr{E} $ (current), $\Delta V=-\mathscr{E} $ (opposite)
 \newline \newline
 series charge: $q=q_1=q_2=...$
 \newline
@@ -723,11 +724,11 @@ volume energy density: $u=\frac{1}{2}\epsilon _0E^2$
 \newline \newline
 RC circuit
 \newline
-\spc charging equation: $R\frac{dq}{dt}+\frac{q}{C}=\varepsilon $
+\spc charging equation: $R\frac{dq}{dt}+\frac{q}{C}=\mathscr{E} $
 \newline
-\spc \spc charge function: $q=C\varepsilon (1-e^{-t/\tau _C })$
+\spc \spc charge function: $q=C\mathscr{E} (1-e^{-t/\tau _C })$
 \newline
-\spc \spc current function: $i=(\frac{\varepsilon }{R})e^{-t/\tau _C }$
+\spc \spc current function: $i=(\frac{\mathscr{E} }{R})e^{-t/\tau _C }$
 \newline
 \spc discharging equation: $R\frac{dq}{dt}+\frac{q}{C}=0 $
 \newline
@@ -767,9 +768,9 @@ Ampere's circuital law: $\oint \mathbf{B}\cdot d\mathbf{s}=\mu _0i$
 \newline
 \spc ideal toroid: $B=\frac{\mu _0i_0N}{2\pi r}$
 \newline \newline
-induced emf: $\varepsilon =-\frac{d\Phi _B}{dt}=-\frac{d}{dt} \iint \mathbf{B} \cdot d\mathbf{S}$
+induced emf: $\mathscr{E} =-\frac{d\Phi _B}{dt}=-\frac{d}{dt} \iint \mathbf{B} \cdot d\mathbf{S}$
 \newline
-\spc for coils: $\varepsilon =-N\frac{d\Phi _B}{dt}$
+\spc for coils: $\mathscr{E} =-N\frac{d\Phi _B}{dt}$
 \newline
 Maxwell-Faraday equation: $\oint \mathbf{E}\cdot d\mathbf{s}=-\frac{d}{dt} \iint \mathbf{B}\cdot d\mathbf{S}$
 \newline
@@ -783,7 +784,7 @@ inductance: $L=\frac{N\Phi _B}{i}$
 \newline
 \spc toroid: $L=\frac{\mu _0N^2h}{2\pi} \, \mathrm{ln}(\frac{b}{a})$
 \newline
-self-induced emf: $\varepsilon _L=-L\frac{di}{dt}$
+self-induced emf: $\mathscr{E} _L=-L\frac{di}{dt}$
 \newline
 potential energy: $U_B=\frac{1}{2}Li^2$
 \newline
@@ -791,9 +792,9 @@ energy density: $u_B=\frac{B^2}{2\mu _0}$
 \newline \newline
 LR circuit
 \newline
-\spc rise in current: $iR+L\frac{di}{dt}=\varepsilon $
+\spc rise in current: $iR+L\frac{di}{dt}=\mathscr{E} $
 \newline
-\spc\spc current function: $i=\frac{\varepsilon }{R}(1-e^{-t/\tau _L})$
+\spc\spc current function: $i=\frac{\mathscr{E} }{R}(1-e^{-t/\tau _L})$
 \newline
 \spc decay in current: $iR+L\frac{di}{dt}=0$
 \newline
@@ -807,7 +808,7 @@ parallel inductance: $\frac{1}{L}=\sum _j \frac{1}{L_j}$
 \newline
 mutual induction, two coils: 
 \newline
-\spc $\varepsilon _2=-M\frac{di_1}{dt}$, $\varepsilon _1=-M\frac{di_2}{dt}$
+\spc $\mathscr{E} _2=-M\frac{di_1}{dt}$, $\mathscr{E} _1=-M\frac{di_2}{dt}$
 \newline \newline
 LC oscillation
 \newline
@@ -887,15 +888,15 @@ series RLC circuit
 \newline
 \spc current: $i=I\sin (\omega t-\phi)$
 \newline
-\spc voltage: $\varepsilon =v_R+v_C+v_L$
+\spc voltage: $\mathscr{E} =v_R+v_C+v_L$
 \newline
-\spc current amplitude: $I=\frac{\varepsilon _m}{Z}$
+\spc current amplitude: $I=\frac{\mathscr{E} _m}{Z}$
 \newline
 \spc \spc impedance $Z=\sqrt{R^2+(X_L-X_C)^2}$
 \newline
 \spc phase constant: $\tan \phi=\frac{V_L-V_C}{V_R}=\frac{X_L-X_C}{R}$
 \newline
-\spc average power: $\overline{P}=I_{\textrm{rms}}^2R=\varepsilon _{\textrm{rms}}I_{\textrm{rms}}\cos \phi$
+\spc average power: $\overline{P}=I_{\textrm{rms}}^2R=\mathscr{E} _{\textrm{rms}}I_{\textrm{rms}}\cos \phi$
 \newline
 \spc $I$ is in phase with $v_R$; leads $v_C$ by 90°, lags hehind $v_L$ by 90°
 \newline \newline
@@ -1277,7 +1278,7 @@ quantum numbers
 \begin{center}
      {\textbf{End of formula sheet}} \\
 \end{center}
-Version 1.0.2 \\
+Version 1.0.3 \\
 This summary was made possible by \textit{cos}. It was coded to help learners recall their knowledge and understanding of general physics. As physics equations do not change according to textbooks thus remaining universal, please reply to the thread where this was published in case of any errors.
 \includegraphics[scale=0.05]{blueicon.eps}
 \end{multicols*}
