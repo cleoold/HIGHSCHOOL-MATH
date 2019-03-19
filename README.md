@@ -1,1 +1,1 @@
-Here I put some science studying notes.
+Here I put some open source science studying notes.
