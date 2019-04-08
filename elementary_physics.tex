@@ -1467,7 +1467,7 @@ nuclear reaction: $\textrm{A}+\textrm{B}\rightarrow \textrm{C}+\textrm{D}+...$
 \subsection{Cosmology}
 collider energies
 \newline
-\spc available energy: $E_a=\Sigma_im_ic^2$
+\spc available energy: $E_a=\sum_im_ic^2$
 \newline
 \spc relation: $E_a^2=m_B^2c^4+m_T^2c^4+2(E_BE_T+c^2\mathbf{p}_B\cdot\mathbf{p}_T)$
 \spc fixed target: $E_a^2=m_B^2c^4+m_T^2c^4+2m_Tc^2E_B$
@@ -1479,6 +1479,121 @@ collider energies
 max living time of force mediator: $\Delta t <\frac{\hbar}{2\Delta E}$
 
 
+\subsection{Useful mathematical relations}
+\subsubsection{Geometry}
+area of rectangle: $S=xy$
+\newline
+length of arc: $s=\theta r$
+\newline
+area of sector: $S=\frac{1}{2}sr=\frac{1}{2}r^2\theta$
+\newline
+area of ellipse: $S=\pi ab$
+\newline
+volume of pyramid: $V=\frac{1}{3}Sh$
+\newline
+infinitesimal-width ring: $dS=d(\pi r^2)=2\pi rdr$
+\newline
+infinitesimal-width hollow sphere: $dV=d(\frac{4}{3}\pi r^3)=4\pi r^2dr$
+\newline \newline
+\textbf{conic section}
+\newline
+polar form: $r=\frac{ed}{1+e\cos\theta}$
+\newline
+\spc circle: $e=0$
+\newline
+\spc ellipse: $0<e<1$
+\newline
+\spc parabola: $e=1$
+\newline 
+\spc hyperbola: $e>1$
+\newline
+\spc semi-latus rectum: $l=ed$
+\newline \newline
+\textbf{trigonometric identities}
+\newline
+$\sin^2\alpha+\cos^2\alpha=1$
+\newline
+$\tan^2\alpha+1=\sec^2\alpha$
+\newline
+$\cot^2\alpha+1=\csc^2\alpha$
+\newline
+$\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta$
+\newline
+$\cos(\alpha\pm\beta)=\cos\alpha\cos\beta\mp\sin\alpha\cos\beta$
+\newline
+$\tan(\alpha\pm\beta)=\frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}$
+\newline
+$\sin\alpha+\sin\beta=2\sin(\frac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2})$
+\newline
+$\cos\alpha+\cos\beta=2\cos(\frac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2})$
+
+\subsubsection{Algebra}
+binomial theorem: $(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^{n-k}b^k$
+\newline
+binomial theorem: $(1+x)^r=1+rx+\frac{r(r-1)}{2!}x^2+\frac{r(r-1)(r-2)}{3!}x^3+...$, $|x|<1$
+\newline
+complex division: $\frac{a+bi}{x+yi}=\frac{(a+bi)(x-yi)}{x^2+y^2}$
+\newline
+De Moivre's formula: $(\cos\theta+i\sin\theta)^n=\cos(n\theta)+i\sin(n\theta)$
+\newline
+triangle inequality:
+$|x|+|y|\geq|x+y|$
+\newline
+Cauchy–Schwarz inequality: $|x||y|\geq|x\cdot y|$
+\newline
+cross product: $\begin{bmatrix}
+x_1\\y_1\\z_1 
+\end{bmatrix}\times
+\begin{bmatrix}
+x_2\\y_2\\z_2 
+\end{bmatrix}=
+\begin{vmatrix}
+\mathbf{i} & x_1 & x_2\\ 
+\mathbf{j} & y_1 & y_2\\ 
+\mathbf{k} & z_1 & z_2
+\end{vmatrix}$
+\newline
+angle between vectors: $\cos\angle \left \langle \mathbf{x},\mathbf{y} \right \rangle=\frac{\mathbf{x}\cdot\mathbf{y}}{||\mathbf{x}||||\mathbf{y}||}$
+\newline
+rotation matrix: $R_\theta=\begin{bmatrix}
+\cos\theta & -\sin\theta\\ 
+ \sin\theta& \cos\theta
+\end{bmatrix}$
+
+\subsubsection{Calculus}
+taylor series:
+\newline
+\spc $\ln (1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots,|x|<1$
+\newline
+\spc $e^{x}=1+x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !}+\cdots$
+\newline
+\spc $\sin x=x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots$
+\newline
+\spc $\cos x=1-\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}-\frac{x^{6}}{6 !}+\cdots$
+\newline
+curve length: $s=\int_{a}^{b} \sqrt{1+\left(\frac{d y}{d x}\right)^{2}} d x$
+\newline \newline
+mean value approximation: 
+\\\spc$f(x+\Delta x, y+\Delta y) \approx f(x, y)+f_x(x, y) \Delta x+f_y(x, y) \Delta y$
+\newline
+derivative vector: $\mathbf{f}^{\prime}\left(t\right)=x'\left(t\right) \mathbf{i}+y'\left(t\right) \mathbf{j}+z'\left(t\right) \mathbf{k}$
+\newline
+gradient: $\nabla f=(\frac{\partial}{\partial x} \mathbf{i}+\frac{\partial}{\partial y} \mathbf{j}+\frac{\partial}{\partial z} \mathbf{k})f$
+\newline
+flux density: $\mathrm{div}\, \mathbf{f}=\nabla \cdot \mathbf{f}$
+\newline
+circulation density: $\mathrm{curl}\,\mathbf{f}=\nabla\times\mathbf{f}$
+\newline
+line integral: $\int_{L} \mathbf{F}\cdot d \mathbf{r}=\int_{t=a}^{t=b} \mathbf{F} \cdot \mathbf{r}'(t) d t$
+\newline
+gradient theorem: $\int_{L[\mathbf{a}, \mathbf{b}]} \nabla F(\mathbf{r}) \cdot \mathrm{d} \mathbf{r}=F(\mathbf{b})-F(\mathbf{a})$
+\newline
+Gauss' theorem: $\iiint_{V}\nabla \cdot \mathbf{F} \,d V=\oiint_{S}\mathbf{F} \cdot \mathbf{n}\, d S$
+\newline
+Stokes' theorem: $\oint_{\Gamma} \mathbf{F} \cdot d \mathbf{s}=\iint_{S} \nabla \times \mathbf{F} \cdot d \mathbf{S}$
+
+
+
 
 
 
@@ -1488,7 +1603,7 @@ max living time of force mediator: $\Delta t <\frac{\hbar}{2\Delta E}$
 \begin{center}
      {\textbf{End of formula sheet}} \\
 \end{center}
-Version 1.1.0 \\
+Version 1.1.1 \\
 This summary was made possible by \textit{cos}. It was coded to help learners recall their knowledge and understanding of general physics. As physics equations do not change according to textbooks thus remaining universal, please reply to the thread where this was published in case of any errors.
 \includegraphics[scale=0.05]{blueicon.eps}
 \end{multicols*}
