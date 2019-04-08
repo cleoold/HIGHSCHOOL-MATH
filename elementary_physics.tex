@@ -186,8 +186,6 @@ elastic collision:
 \spc $v_\mathrm{CM}=\frac{P}{m_1+m_2}$
 \newline \newline
 complete inelastic collision: $m_1v_1+m_2v_2=(m_1+m_2)V_{\mathrm{CM}}$
-\newline
-heat of reactions: $Q=-\Delta mc^2$ ($+Q$: exothermic, $-Q$: endothermic)
 
 \subsection{Rotation}
 angular position: $\theta =s/r$
@@ -361,6 +359,11 @@ gravitational field: $g=\frac{GM}{r^2}$
 gravitational potential energy: $U=\int_{\infty }^{r}\frac{GMm}{x^2}dx=-\frac{GMm}{r}$
 \newline
 \spc escape speed: $v=\sqrt{\frac{2GM}{r}}$
+\newline
+\newline
+plane motion of point mass:
+\newline
+\spc $a_r=\ddot{r}-r\dot{\theta}^2,a_\theta=2\dot{r}\dot{\theta}+r\ddot{\theta}$
 \newline \newline
 orbits:
 \newline
@@ -755,6 +758,8 @@ Biot-Savart law: $d\mathbf{B}=\frac{\mu _0}{4\pi }\frac{id\mathbf{s\times \mathb
 \newline
 vacuum permeability: $\mu_0=4\pi\cdot10^{-7}\textrm{T}\cdot \textrm{m}/\textrm{A}$ (H/m)
 \newline
+\spc point charge: $B=\frac{\mu_0}{4\pi}\frac{qv}{r^2}$
+\newline
 \spc arc (to centre): $B=\frac{\mu _0i\theta }{4\pi R}$
 \newline \newline
 Ampere's circuital law: $\oint \mathbf{B}\cdot d\mathbf{s}=\mu _0i$
@@ -841,7 +846,7 @@ magnetic field induced by electric field: $\oint \mathbf{B}_E\cdot d\mathbf{s}=+
 \spc $B=\frac{\mu _0\epsilon _0R^2}{2}\frac{dE}{dt}\frac{1}{r}$ (outside), $\frac{\mu _0\epsilon _0}{2}\frac{dE}{dt}r$ (inside)
 \newline
 displacement current: $i_d=\epsilon _0\frac{d\Phi _E}{dt}$
-\newline \newline \newline
+\newline \newline 
 Electromagnetic waves
 \newline
 \spc B and E are in phase:
@@ -1096,6 +1101,8 @@ acceleration: $a^{\mu}=\frac{d}{d\tau}u^{\mu}\perp u^{\mu}$
 \newline
 4-momentum: $p^{\mu}=mu^{\mu}=m\gamma[c,v]=[\frac{E}{c},\gamma mv]$
 \newline
+\spc magnitude of momentum: $|p^\mu|=mc$
+\newline
 relativistic kinetic energy: $K=mc^2(\gamma -1)$
 \newline
 \spc total energy: $E=\gamma mc^2=\underbrace{mc^2}_{\textrm{rest E}}+\underbrace{K}_{\textrm{kinetic E}}$
@@ -1136,12 +1143,12 @@ blackbody radiation (low frequency)
 \newline
 \spc \spc $p_N(f)=\frac{N(f)}{V}=\frac{8\pi}{c^2}f^2$
 \newline
-\spc distribution of energy per unit volume
+\spc distribution of energy per unit volume:
 \newline
 \spc \spc $p_{\nicefrac{E}{V}}(f)=\frac{E(f)}{V}=\frac{8\pi}{c^3}f^2kT$
 \newline
 \spc number of photons in standing wave: $n\approx \frac{kT}{hf}$
-\newline
+\newpage
 ultraviolet catastrophe (high frequency)
 \newline
 \spc energy of photons: $E=nhf$
@@ -1216,7 +1223,7 @@ particle bounded by nodes $0$, $L$
 \spc wave function, time-independent:
 \newline
 \spc \spc $\psi_n(x)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L}),n=1,2,...$
-\newline
+\newline\newline
 \spc wave function, time-dependent:
 \newline
 \spc \spc $\Psi_n(x,t)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})\cdot e^{-\frac{i}{\hbar}E_nt},n=1,2,...$
@@ -1246,12 +1253,12 @@ harmonic oscillator
 \spc energy at $n$th level: \spc\spc$E_n=(n+\frac{1}{2})hf=\underbrace{nhf}_{\textrm{number of photons}}+\underbrace{\tfrac{1}{2}hf}_{\textrm{zero-point energy}}$
 \newline
 \spc energy in vacuum: $E_{\textrm{vac}}=-\frac{hc}{48}L$
-\subsection{The hydrogen atom}
+\subsection{The electrons}
 total energy of $e^-$:
 $E_n=-(\frac{1}{4\pi\epsilon_0})^2\frac{me^4}{2\hbar}\frac{1}{n^2}=-\frac{13.6\,\textrm{eV}}{n^2}$
 \newline
 \spc principle quantum \#: $n=1,2,...$
-\newline
+\newline\newline
 angular momentum of $e^-$
 \newline
 \spc magnitude of $\mathbf{L}$: $L=\sqrt{\ell(\ell+1)}\hbar$
@@ -1261,7 +1268,7 @@ angular momentum of $e^-$
 \spc z-projection of $\mathbf{L}$: $L_z=m_{\ell}\hbar$
 \newline
 \spc\spc magnetic quantum \#: $m_{\ell}=0,\pm 1,\pm 2, ..., \pm \ell$
-\newline
+\newline\newline
 spin angular momentum of $e^-$
 \newline
 \spc magnitude of $\mathbf{S}$: $S=\sqrt{\tfrac{1}{2}(\tfrac{1}{2}+1)}\hbar=\sqrt{\tfrac{3}{4}}\hbar$
@@ -1276,10 +1283,12 @@ orbital magnetic dipole moment: $\boldsymbol{\mu}=-\frac{1}{2}e\mathbf{r}\times 
 \newline
 spin magnetic dipole moment: $\boldsymbol{\mu}_{\mathbf{S}}=-2.00232\frac{e}{2m}\mathbf{S}$
 \newline
-Bohr magneton: $\mu_B=\mu_z=\frac{e\hbar}{2m}$
+Bohr magneton: $\mu_B=\mu_{e^-}=\mu_z=\frac{e\hbar}{2m}=9.274\cdot 10^{-24}\,\textrm{J}/\textrm{T}$
 \newline
 interacting energy: $U=m_{\ell}\mu_zB$
-\newline \newline
+\newline
+\vfill \null
+\columnbreak
 shell/subshell level convention
 \begin{center}
 \begin{tabular}{ |c| c c c c c| } 
@@ -1316,20 +1325,170 @@ diatomic molecular spectra
 \newline
 \spc net moment of inertia: $I=m_rd^2$
 \newline
-1D lattice (no-periodicity)
+1D sodium lattice
 \newline
 \spc Fermi momentum: $p_F=N\Delta p\cdot 2\cdot 2$
 \newline
 \spc Fermi energy: $E_F=\frac{h^2}{32m}(\frac{N}{L})^2$
 \newline
-(continued)
+\spc gap energy: $E_{\textrm{gap}}=\overline{U_{\textrm{odd}}}-\overline{U_{\textrm{even}}}$
+\newline
+\spc $e^-$ position: $P_{\textrm{even}}(x)\propto \cos^2(\frac{\pi x}{a})$, $P_{\textrm{odd}}(x)\propto \sin^2(\frac{\pi x}{a})$
+\newline
+3D lattice (free particle in box)
+\newline
+\spc energy of states: $E=\frac{\hbar^2}{2m}\frac{\pi^2}{L^2}(n_x^2+n_y^2+n_z^2)$, $n_i=1,2,...$
+\newline
+\spc number of states: $n(E)= \frac{(2m)^{3/2}V}{3\pi^2\hbar^3}E^{3/2}$
+\newline
+\spc state density: $g(E)=\frac{(2m)^{3/2}V}{2\pi^2\hbar^3}E^{1/2}$
+\newline
+\spc distribution of state with $E$ is filled (Fermi-Dirac):
+\newline
+\spc\spc $f_{T=0}(E)=\left\{\begin{matrix}
+1,&E\leq E_F\\ 0,&E>E_F 
+\end{matrix}\right.$
+\newline
+\spc\spc $f_{T>0}(E)=\frac{1}{e^{(E-E_F)/kT}+1}$
+\newline
+\spc Fermi energy: $E_F=\frac{3^{2/3}\pi^{4/3}\hbar^2}{2m}n^{2/3},n=\frac{N}{V}$
+\newline
+current-voltage relation (semiconductor): $I=I_s(e^{eV/kT}-1)$
+
+\subsection{Nuclear reactions}
+$^A_Z\textrm{M}: \underbrace{A}_{\textrm{nucleon \#}}=\underbrace{Z}_{\textrm{protons}}+\underbrace{N}_{\textrm{neutrons}}$
+\newline
+radius of nucleon (approx.): $R=R_0A^{1/3}$, $R_0=1.2\,\textrm{Fm}$
+\newline
+volume of nucleon (approx.): $V=\frac{4}{3}\pi R_0^3A$
+\newline \newline
+common nucleon masses
+\newline
+\spc mass of $^{12}_6\mathrm{C}$: $M_{^{12}_6\mathrm{C}}=1\,\textrm{u}=1.660538782\cdot 10^{-27}\,\textrm{kg}$
+\newline
+\spc mass of $^1_1\mathrm{H}$: $M_{^1_1\mathrm{H}}=1.007826\,\textrm{u}$
+\newline
+\spc mass of proton: $m_p=1.007276\,\textrm{u}$
+\newline
+\spc mass of neutron: $m_n=1.008665\,\textrm{u}$
+\newline
+\spc mass of electron: $m_{e^{-}}=0.00054858\,\textrm{u}$
+\newline \newline
+spin quantum momentum of $p$ and $n$
+\newline
+\spc magnitude of $\mathbf{S}$: $S=\sqrt{\tfrac{3}{4}}\hbar$
+\newline
+\spc spin quantum \#: $m_s=\pm\frac{1}{2}$
+\newline
+\spc z-projection of $\mathbf{S}$: $S_z=m_s\hbar$
+\newline
+total angular momentum: $\mathbf{J}=\mathbf{L}+\mathbf{S}$
+\newline \newline
+nuclear magneton: $\mu_{\textrm{nucl}}=\frac{e\hbar}{2m_p}=5.05078\cdot 10^{-27}\,\textrm{J}/\textrm{T}$
+\newline
+proton magneton: $|\mu_p|=2.7928\mu_{\textrm{nucl}}$
+\newline
+neutron magneton: $|\mu_n|=1.9130\mu_{\textrm{nucl}}$
+\newline \newline
+nuclear binding
+\newline
+\spc procedure: $^A_Z\textrm{M}+\textrm{K}\rightarrow (Z)\,^1_1\textrm{H}+(N)\, \textrm{n}$
+\newline
+\spc mass defect: $\Delta m=Z(m_p+m_e)+Nm_n-M_{\textrm{original}}$
+\newline
+\spc nuclear binding energy: $E_B=c^2\Delta m$
+\newline
+\spc binding energy per nucleon: $\frac{E_B}{A}$
+\newline \newline
+liquid drop model
+\newline
+\spc binding energy: $E_B=C_1A-C_2A^{2/3}-C_3\frac{Z(Z-1)}{A^{1/3}}-C_4\frac{(A-2Z)^2}{A}+C_5A^{-4/3}$
+\newline
+\spc\spc $C_1=15.75\,\textrm{MeV}$, $C_2=17.8\,\textrm{MeV}$,
+\newline
+\spc\spc $C_3=0.71\,\textrm{MeV}$, $C_4=23.69\,\textrm{MeV}$,
+\newline
+\spc\spc $C_5=39\,\textrm{MeV}(Z,N\textrm{ even}),-39\,\textrm{MeV}(Z,N\textrm{ odd}),0\,(\textrm{else})$
+\newline
+\spc semiemperical mass formula: $^A_ZM=(Z)M_{^1_1\textrm{H}}+(N)m_n-\frac{E_B}{c^2}$
+\newline \newline
+alpha decay: $^A_Z\textrm{X}\rightarrow \,^{A-4}_{Z-2}\textrm{Y}+\,^4_2\textrm{He}+\textrm{K}$
+\newline
+\spc result: $Z\rightarrow Z-2, N\rightarrow N-2, A\rightarrow A-4$
+\newline
+\spc energy required: $M_\textrm{parent}>M_{\textrm{daughter}}+M_{^4_2\textrm{He}}$
+\newline
+\spc centre of momentum frame: $m_{\textrm{He}}v_{\textrm{He}}=M_{\textrm{Y}}V_{\textrm{Y}}$
+\newline
+\spc shared kinetic energy: $K=K_{\textrm{He}}+K_{\textrm{Y}}$
+\newline \newline
+$\beta^-$ decay: $\textrm{n}\rightarrow \textrm{p}+\textrm{e}^-+\overline{\nu_e}+\textrm{K}$
+\newline
+\spc result: $Z\rightarrow Z+1, N\rightarrow N-1$
+\newline
+\spc energy required:
+$M_\textrm{parent}>M_{\textrm{daughter}}$
+\newline \newline
+$\beta^+$ decay: $\textrm{p}\rightarrow \textrm{n}+\textrm{e}^++\nu_e+\textrm{K}$
+\newline
+\spc result: $Z\rightarrow Z-1, N\rightarrow N+1$
+\newline
+\spc energy required:
+$M_\textrm{parent}>M_{\textrm{daughter}}+2m_{e^-}$
+\newline \newline
+electron capture: $\textrm{p}+\textrm{e}^-+\textrm{K}\rightarrow \textrm{n}+\nu_e$
+\newline
+\spc result: $Z\rightarrow Z-1, N\rightarrow N+1$
+\newline
+\spc energy required:
+$M_\textrm{parent}>M_{\textrm{daughter}}$
+\newline \newline
+gamma decay: $^A_Z\textrm{X}^*\rightarrow \, ^A_Z\textrm{X}+\gamma$
+\newline \newline \newline
+nuclear activities
+\newline
+\spc activity: $|\frac{dN}{dt}|\equiv \lambda N(t)$
+\newline
+\spc \spc Curie: $1\,\textrm{Ci}=3.7\cdot 10^{10}\,\frac{\textrm{decays}}{\textrm{s}}\,\,\,(\textrm{Bq})$
+\newline
+\spc \# of radioactive nuclei: $N(t)=N_0e^{-\lambda t}$
+\newline
+\spc half-life: $T_{\frac{1}{2}}=\frac{\ln 2}{\lambda}$
+\newline
+\spc mean-life: $T_{\frac{1}{e}}=\frac{1}{\lambda}$
+\newline \newline
+nuclear reaction: $\textrm{A}+\textrm{B}\rightarrow \textrm{C}+\textrm{D}+...$
+\newline
+\spc reaction energy: $Q=c^2\Delta m=c^2(m_{\textrm{reactant}}-m_{\textrm{product}})$
+\newline
+\spc\spc ($Q>0$: exothermic, $Q<0$: endothermic)
+\newline
+\newline
+\subsection{Cosmology}
+collider energies
+\newline
+\spc available energy: $E_a=\Sigma_im_ic^2$
+\newline
+\spc relation: $E_a^2=m_B^2c^4+m_T^2c^4+2(E_BE_T+c^2\mathbf{p}_B\cdot\mathbf{p}_T)$
+\spc fixed target: $E_a^2=m_B^2c^4+m_T^2c^4+2m_Tc^2E_B$
+\newline
+\spc\spc high energy: $E_a=\sqrt{2E_Bm_Tc^2}$
+\newline
+\spc head-on, same mass, high energy: $E_a=2E_B$
+\newline
+max living time of force mediator: $\Delta t <\frac{\hbar}{2\Delta E}$
+
+
+
+
+
 \vfill \null
 \columnbreak
 
 \begin{center}
      {\textbf{End of formula sheet}} \\
 \end{center}
-Version 1.0.10b \\
+Version 1.1.0 \\
 This summary was made possible by \textit{cos}. It was coded to help learners recall their knowledge and understanding of general physics. As physics equations do not change according to textbooks thus remaining universal, please reply to the thread where this was published in case of any errors.
 \includegraphics[scale=0.05]{blueicon.eps}
 \end{multicols*}
